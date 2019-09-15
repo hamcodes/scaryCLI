@@ -37,8 +37,6 @@ class CLI
 
   def display_selection(input)
     puts "#{input.title}"
-    # puts "OVERALL SCORE: #{input.score}"
-    # puts "YEAR: #{input.year} \n "
     puts "#{input.summary}"
   end
 
@@ -54,14 +52,10 @@ class CLI
       puts "\nChoose your poison with another movie!"
       list
     elsif input.upcase == 'EXIT'
-        puts "See you soon!!!"
+        puts "..(ʘ_ʘ)....Goodbye for now MUUUAAAAHAHAHAH!!!....(ʘ_ʘ).."
     else
       puts "Invalid selction. Please try again."
       list
     end
   end
-
-  # def goodbye
-  #   puts "See you soon!!!"
-  # end
 end

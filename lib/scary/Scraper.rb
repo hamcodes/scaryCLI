@@ -11,10 +11,7 @@ class Scary::Scraper
 
       movie.title = each_movie.search("h2").text
       movie.movie_url = each_movie.search("a").attr("href")
-      movie.summary = each_movie.search("div.info.critics-consensus").text.strip
-      # movie.year = each_movie.search("h2 .subtle").text
-      # movie.synopsis = each_movie.search("info synopsis").text
-           
+      movie.summary = each_movie.search("div.info.critics-consensus").text.strip      
 
       movie.save
     end

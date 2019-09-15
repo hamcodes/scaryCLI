@@ -5,12 +5,12 @@ require "scary/version"
 Gem::Specification.new do |spec|
   spec.name          = "scary"
   spec.version       = Scary::VERSION
-  spec.authors       = ["Jeremy"]
+  spec.authors       = ["Jeremy Hamilton"]
   spec.email         = ["jeremyhamilton035@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{This is a CLI for scary movies based on information from the listed site.}
+  spec.description   = %q{}
+  spec.homepage      = "https://github.com/hamcodes/scaryCLI"
   spec.license       = "MIT"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
