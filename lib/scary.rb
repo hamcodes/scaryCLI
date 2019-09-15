@@ -1,4 +1,5 @@
-require "./scary/version"
+require_relative "./scary/version"
+require_relative "./scary/CLI"
 
 module Scary
   class Error < StandardError; end

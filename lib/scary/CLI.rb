@@ -1,4 +1,4 @@
-class Scary::CLI
+class CLI 
 
   def call
     puts ""
@@ -45,17 +45,23 @@ class Scary::CLI
   def see_more(movie)
     puts ""
     puts "Want to be scared even more? Put Y to follow a link to the movie, or put N to go back to the main menu! \n"
-    puts "Y/N"
+    puts "Y/N/EXIT"
     input = gets.strip
-    if ["Y"].include?(input.upcase)
+    if input.upcase == 'Y'
       movie.open_in_browser
-    else
+      list
+    elsif input.upcase == 'N'
       puts "\nChoose your poison with another movie!"
+      list
+    elsif input.upcase == 'EXIT'
+        puts "See you soon!!!"
+    else
+      puts "Invalid selction. Please try again."
       list
     end
   end
 
-  def goodbye
-    puts "See you soon!!!"
-  end
+  # def goodbye
+  #   puts "See you soon!!!"
+  # end
 end
